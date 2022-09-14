@@ -1,0 +1,217 @@
+/*常用的css*/
+*{margin:0;padding:0}
+body,html{background:#fff;height: 100%;max-width:640px;margin: 0 auto;font-family:"微软雅黑";font-size: 14px;color:#000;}
+table{border-collapse:collapse;border-spacing:0}
+img{border:0;vertical-align:top;-ms-interpolation-mode: bicubic;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+a{text-decoration:none;color:#000}
+a:hover{text-decoration:none}
+input[type="button"],input[type="submit"],input[type="reset"],input[type="text"]{-webkit-appearance: none;}
+textarea,select{ -webkit-appearance: none;}
+
+/*公用CSS*/
+.wb{width: 100%}
+.fl{float: left}
+.fr{float: right}
+.dm{margin: 0 auto}
+.tm{text-align: center;}
+.poab{position: absolute}
+.pore{position: relative}
+.justify{text-align: justify}
+.radius{border-radius: 100%;}
+.indent{text-indent: 2em;}
+.overflow{overflow: hidden;}
+.inlineblock{display:inline-block;}
+.block{display: block}
+.clear{clear: both;}
+.dibu97swt,#LRdiv0,#LRdiv1,#LRdiv2,#LRdiv3{
+  display: none;
+}
+
+.ellipse {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.inline{display: inline-block;*display: inline;*zoom: 1;}
+/*  */
+
+input[type=radio],input[type=checkbox] {
+  margin-right: 0.6rem;
+  cursor: pointer;
+  width: 0rem;
+  height: 0.45rem;
+  position: relative;
+  text-align: center;
+}
+
+input[type=radio]:after,input[type=checkbox]:after {
+  position: absolute;
+  width: 0.3rem;
+  height: 0.4rem;
+  top: 0;
+  content: " ";
+  color: #fff;
+  display: inline-block;
+  visibility: visible;
+  padding: 0 0.05rem;
+  border-radius: 0.1rem;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=radio]:checked:after,input[type=checkbox]:checked:after {
+  background-color: #814521;
+}
+input[type=radio],input[type=checkbox]{
+	visibility: hidden;
+  outline: none;
+}
+
+
+/*  */
+.ys_title{
+  /*height: 2rem;*/
+  line-height: 2rem;
+  text-align: center;
+  background: #45ade3;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+		background: #fff;
+		    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+		    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+padding: .2rem;						
+}
+.text_wrap{
+  color: #69a8e0;
+  margin: 0 auto;
+}
+.text_wrap div{
+  margin: 0 auto;
+  width: 90.2%;
+  background: #45ade3;
+  color: #fff;
+  border-radius: 0.3rem;
+}
+.text_wrap div p{
+  padding: 0.4rem 0.6rem 0.6rem 0.6rem;
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+  text-align: justify;
+}
+.box_form_title{
+  text-align: center;
+  color: #814521;
+}
+.box_form_title h2{
+  font-size: 0.8rem;
+}
+.box_form_title p{
+  padding:0.6rem 0;
+}
+
+
+/* 表单 */
+.box_form_wrap{
+  margin-top: 0.5rem;
+  padding: 0.8rem 0;
+  /* background: #ebebeb; */
+}
+.box_form_box{
+  width: 90%;
+  margin: 0 auto;
+}
+.box_form_table{
+    padding-top: 0.8rem;
+}
+.box_form_wt{
+  color: #814521;
+  /* border-bottom: 1px Dotted #676767; */
+}
+.box_form_wt ul{
+  width: 100%;
+  margin: 0 auto;
+		
+}
+.textin ul{
+	  margin: 0 auto;
+		width: auto !important;
+			display: table;
+}
+.box_form_wt ul li{
+  height: 1.2rem;
+  line-height: 0.8rem;
+  width: 50%;
+  display: block;
+  float: left;
+  font-size: 0.6rem;
+  padding-bottom: 0.4rem;
+}
+.box_form_wt p{
+  padding-bottom: 0.4rem;
+  font-size: 0.6rem;
+}
+.padt5{
+  padding-top: 0.5rem;
+}
+.box_form_name{
+  font-size: 0.6rem;
+  padding-top: 0.5rem;
+  line-height: 1.3rem;
+}
+.box_form_name div{
+  float: left;
+  margin-right: 0.55rem;
+}
+.box_form_name div:last-child{
+  margin-right: 0;
+}
+.box_form_n input,.box_form_a input,.box_form_dt input,.box_form_dt textarea{
+  padding: 0.1rem 0.2rem;
+  outline: none;
+  border: 1px solid #9c9797;
+  border-radius: 0.1rem;
+  height: 1rem;
+}
+.box_form_n input{
+  width: 3rem;
+}
+.box_form_a input{
+  width: 1rem;
+}
+.box_form_dt{
+  font-size: 0.6rem;
+}
+.box_form_dt ul li{
+  padding-top: 0.5rem;
+}
+.box_form_dt  input{
+  width: 12.5rem;
+  height: 1.3rem;
+}
+
+.box_form_button{
+  padding-top: 0.5rem;
+}
+.box_form_button input{
+  background: #45ade3;
+  width: 13rem;
+  height: 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+/*  */
+.right_online{
+  position: fixed;
+  right: 0;
+  bottom: 35%;
+  display: none;
+}
+.right_online img{
+  width: 2rem;
+}
