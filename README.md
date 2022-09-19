@@ -6,7 +6,7 @@
 //cdn.jsdelivr.net/gh/songwqs/cdnImg/
 
 //cdn.jsdelivr.net/gh/songwqs/cdnImg@main/
-## jsdelivr
+## staticaly
 //cdn.staticaly.com/gh/songwqs/cdnImg/
 
 //cdn.staticaly.com/gh/songwqs/cdnImg@main/
