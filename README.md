@@ -12,7 +12,7 @@
 //cdn.staticaly.com/gh/songwqs/cdnImg@main/
 ___________________________________________________________________________
 
-https://cdn.staticaly.com/gh/songwqs/cdnImg@main/
+https://cdn.jsdelivr.net/gh/songwqs/cdnImg@main/
 
 https://cdn.staticaly.com/gh/songwqs/cdnImg@main/
       
