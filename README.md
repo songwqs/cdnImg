@@ -1,12 +1,14 @@
 自用 CDN镜像资源  且勿乱用哦
 
-链接(例子)：
-
+国内：
 [由54ayao提供](https://github.com/54ayao/Chinajsdelivr) 
 
-国内：
+例子：//jsd.cdn.zzko.cn/gh/songwqs/cdnImg/
+__________________________________
+自建git加速
+https://git.songw.top/(https://git.songw.top/) 
 
-//jsd.cdn.zzko.cn/gh/songwqs/cdnImg/
+例子：https://git.songw.top/https://raw.githubusercontent.com/songwqs/cdnImg/main/
 __________________________________
 ## jsdelivr
 
