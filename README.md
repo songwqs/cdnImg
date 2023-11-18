@@ -5,10 +5,10 @@
 
 例子：//jsd.cdn.zzko.cn/gh/songwqs/cdnImg/
 __________________________________
-自建git加速
+自建git加速: 
 https://git.songw.top/
 
-例子：https://git.songw.top/https://raw.githubusercontent.com/songwqs/cdnImg/main/
+例子： https://git.songw.top/https://raw.githubusercontent.com/songwqs/cdnImg/main/
 __________________________________
 ## jsdelivr
 
