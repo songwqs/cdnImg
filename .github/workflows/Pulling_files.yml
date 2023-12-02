@@ -24,7 +24,8 @@ jobs:
       run: |
         cd cdnImg
         git init
+        git symbolic-ref HEAD refs/heads/main  # Set the default branch to main
         git add hacg/image_paths.json
         git commit -m "Sync image_paths.json"
-        git remote add origin https://${{ secrets.RAW_TOKEN }}@github.com/${{ github.repository }}.git
+        git remote add origin https://${{ secrets.RAW_TOKEN }}@github.com/songwqs/songw_Actions.git
         git push -u origin main
