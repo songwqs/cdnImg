@@ -18,13 +18,11 @@ jobs:
     - name: Fetch only the needed directory
       run: |
         git init
-        git remote add origin https://github.com/songwqs/songw_Actions.git
-        git fetch --depth=1 origin main:cicd-sync
+        git fetch --depth=1 https://github.com/songwqs/songw_Actions.git main:cicd-sync
         git checkout cicd-sync -- cdnImg/hacg/image_paths.json
 
     - name: Commit and push changes
       run: |
         git add cdnImg/hacg/image_paths.json
         git commit -m "Sync image_paths.json"
-        git remote set-url origin https://${{ secrets.RAW_TOKEN }}@github.com/${{ github.repository }}.git
-        git push origin HEAD:main
+        git push https://${{ secrets.RAW_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
