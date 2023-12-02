@@ -12,22 +12,19 @@ jobs:
     steps:
     - name: Set up Git
       run: |
-        git config --global user.email "songwqs@gmail.com"
-        git config --global user.name "songwqs"
-
-    - name: Initialize Git
-      run: git init
-
-    - name: Remote add origin
-      run: git remote add origin https://github.com/songwqs/songw_Actions.git
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
 
     - name: Fetch only the needed directory
       run: |
-        git fetch origin main:cicd-sync
+        git init
+        git remote add origin https://github.com/songwqs/songw_Actions.git
+        git fetch --depth=1 origin main:cicd-sync
         git checkout cicd-sync -- cdnImg/hacg/image_paths.json
 
     - name: Commit and push changes
       run: |
         git add cdnImg/hacg/image_paths.json
         git commit -m "Sync image_paths.json"
-        git push https://${{ secrets.RAW_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+        git remote set-url origin https://${{ secrets.RAW_TOKEN }}@github.com/${{ github.repository }}.git
+        git push origin HEAD:main
