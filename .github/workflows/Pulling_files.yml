@@ -10,25 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
     - name: Set up Git
       run: |
         git config --global user.email "${{ github.actor }}@gmail.com"
         git config --global user.name "${{ github.actor }}"
-        
-    - name: Clone private repository
-      run: |
-        git clone https://${{ secrets.RAW_TOKEN }}@github.com/songwqs/songw_Actions.git private_repo
 
-    - name: Copy image_paths.json
+    - name: Initialize Git
+      run: git init
+
+    - name: Remote add origin
+      run: git remote add origin https://github.com/songwqs/songw_Actions.git
+
+    - name: Fetch only the needed directory
       run: |
-        mkdir -p cdnImg/hacg
-        cp private_repo/cdnImg/hacg/image_paths.json cdnImg/hacg/
+        git fetch origin main:cicd-sync
+        git checkout cicd-sync -- cdnImg/hacg/image_paths.json
 
     - name: Commit and push changes
       run: |
         git add cdnImg/hacg/image_paths.json
         git commit -m "Sync image_paths.json"
-        git push
+        git push https://${{ secrets.RAW_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
