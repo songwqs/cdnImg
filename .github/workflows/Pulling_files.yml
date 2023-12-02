@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Set up Git
       run: |
-        git config --global user.email "songwqs@github.com"
+        git config --global user.email "songwqs@gmail.com"
         git config --global user.name "songwqs"
 
     - name: Fetch only the needed directory
@@ -23,16 +23,19 @@ jobs:
     - name: Configure SSH
       run: |
         mkdir -p ~/.ssh
-        echo "$SSH_SONGW_ACTIONS" > ~/.ssh/id_rsa
+        echo "$PRIVATE_SSH_KEY" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
       env:
-          SSH_SONGW_ACTIONS: ${{ secrets.SSH_SONGW_ACTIONS }}
-    - name: Commit and push changes
+          PRIVATE_SSH_KEY: ${{ secrets.SSH_SONGW_ACTIONS }}
+    - name: Commit changes
       run: |
         cd cdnImg
         git init
         git add hacg/image_paths.json
         git commit -m "Sync image_paths.json"
+
+    - name: Force push changes to main
+      run: |
         git remote add origin git@github.com:songwqs/songw_Actions.git
-        git push -u origin main
+        git push -f origin HEAD:main
