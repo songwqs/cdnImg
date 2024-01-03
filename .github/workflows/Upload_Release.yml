@@ -1,0 +1,41 @@
+name: Upload Release to Repository
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: 'Release version to download'
+        required: true
+        default: '2.2'  # 默认版本，可根据需要更改
+
+jobs:
+  upload-release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Download Release
+      run: |
+        wget https://github.com/songwqs/cdnImg/releases/download/${{ github.event.inputs.release_version }}/hacg_2023112.zip
+        unzip hacg_2023112.zip -d extracted_files
+
+    - name: Upload to Repository
+      uses: actions/upload-artifact@v2
+      with:
+        name: hacg_files
+        path: extracted_files
+
+    - name: Move to Repository Directory
+      run: |
+        mkdir -p path/to/hacg
+        mv extracted_files/* path/to/hacg
+
+    - name: Commit Changes
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add path/to/hacg
+        git commit -m "Add hacg files"
+        git push
