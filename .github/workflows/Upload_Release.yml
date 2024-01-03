@@ -18,7 +18,7 @@ jobs:
 
     - name: Download Release
       run: |
-        wget https://github.com/songwqs/cdnImg/releases/download/${{ github.event.inputs.release_version }}/hacg_2023112.zip
+        wget https://git.songw.top/https://github.com/songwqs/cdnImg/releases/download/${{ github.event.inputs.release_version }}/hacg_2023112.zip
         unzip hacg_2023112.zip -d extracted_files
 
     - name: Upload to Repository
