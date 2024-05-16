@@ -79,7 +79,8 @@ code.bdstatic.com/npm 百度仅同步热门包
 
 这些节点同步速度不同，但都需要准确的版本号
 
-域名状态
+域名状态:
+
 √ https://cdn.bytedance.com 可用
 
 √ https://www.staticfile.org 可用
