@@ -4,19 +4,23 @@
 [由54ayao提供](https://github.com/54ayao/Chinajsdelivr) 
 
 例子：//jsd.cdn.zzko.cn/gh/songwqs/cdnImg/
-__________________________________
+
+————————————————————
+
 自建git加速: 
 https://git.songw.top/
 
 例子： https://git.songw.top/https://raw.githubusercontent.com/songwqs/cdnImg/main/
-__________________________________
+
+————————————————————
+
 ## jsdelivr
 
 //cdn.jsdelivr.net/gh/songwqs/cdnImg/
 
 //cdn.jsdelivr.net/gh/songwqs/cdnImg@main/
 
-__________________________________
+————————————————————
 
 备用：
 
@@ -26,14 +30,14 @@ fastly.jsdelivr.net/gh/songwqs/cdnImg/
 
 testingcf.jsdelivr.net/gh/songwqs/cdnImg/
 
-__________________________________
+————————————————————
 
 ## staticaly
 //cdn.staticaly.com/gh/songwqs/cdnImg/
 
 //cdn.staticaly.com/gh/songwqs/cdnImg@main/
 
-————————————————————————————————————————————————
+————————————————————
 
 https://gcore.jsdelivr.net Gcore 节点可用性高
 
@@ -97,7 +101,6 @@ https://code.bdstatic.com/npm 百度仅同步热门包
 
 √ https://docs.microsoft.com/en-us/aspnet/ajax/cdn 可用
 
-
 Github 加速站-Github 镜像
 
 https://gh.mzec.top/
@@ -108,5 +111,5 @@ https://ghproxy.053000.xyz/
 
 https://gh.nxnow.top/
 
-————————————————————————————————————————————————
+————————————————————
 
