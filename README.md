@@ -106,15 +106,7 @@ Github 加速站-Github 镜像
 
 https://gh.mzec.top/
 
-https://gh.mixyun.cyou/
-
 https://mirror.ghproxy.com/
-
-https://git.domob.org/
-
-http://www.subook.link:88/
-
-https://uhk.corpa.me/
 
 https://ghproxy.053000.xyz/
 
