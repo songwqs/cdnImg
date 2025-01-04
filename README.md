@@ -34,48 +34,48 @@ __________________________________
 //cdn.staticaly.com/gh/songwqs/cdnImg@main/
 
 ————————————————————————————————————————————————
-gcore.jsdelivr.net Gcore 节点可用性高
+https://gcore.jsdelivr.net Gcore 节点可用性高
 
-testingcf.jsdelivr.net Cloudflare 节点可用性高
+https://testingcf.jsdelivr.net Cloudflare 节点可用性高
 
-quantil.jsdelivr.net Quantil 节点可用性尚可
+https://quantil.jsdelivr.net Quantil 节点可用性尚可
 
-fastly.jsdelivr.net Fastly 节点可用性尚可
+https://fastly.jsdelivr.net Fastly 节点可用性尚可
 
-originfastly.jsdelivr.net Fastly 节点可用性低
+https://originfastly.jsdelivr.net Fastly 节点可用性低
 
-test1.jsdelivr.net Cloudflare 节点可用性低
+https://test1.jsdelivr.net Cloudflare 节点可用性低
 
-cdn.jsdelivr.net 通用节点可用性低
+https://cdn.jsdelivr.net 通用节点可用性低
 
 
 有第三方提供 jsdelivr 节点：
 
-gh.776161.xyz  （海CDN 优化回国）
+https://gh.776161.xyz  （海CDN 优化回国）
 
-jsd.cdn.zzko.cn  （由54ayao提供，稳如老狗，推荐）
+https://jsd.cdn.zzko.cn  （由54ayao提供，稳如老狗，推荐）
 
-cdn.jsdelivr.us  （海外融合Anycast/CDN 优化回国）
+https://cdn.jsdelivr.us  （海外融合Anycast/CDN 优化回国）
 
-jsdelivr.b-cdn.net （台湾 CDN）
+https://jsdelivr.b-cdn.net （台湾 CDN）
 
-jsd.cdn.zzko.cn 国内 CDN
+https://jsd.cdn.zzko.cn 国内 CDN
 
-cdn.jsdelivr.us Anycast
+https://cdn.jsdelivr.us Anycast
 
 国内 cdn npm 节点：
 
-npm.elemecdn.com 饿了么同步快，缺的多
+https://npm.elemecdn.com 饿了么同步快，缺的多
 
-npm.onmicrosoft.cn 公益需准确的版本号
+https://npm.onmicrosoft.cn 公益需准确的版本号
 
-unpkg.zhimg.com 知乎同步慢
+https://unpkg.zhimg.com 知乎同步慢
 
-npm.akass.cn 公益需准确的版本号
+https://npm.akass.cn 公益需准确的版本号
 
-cdn.chuqis.com/npm/ 公益需准确的版本号
+https://cdn.chuqis.com/npm/ 公益需准确的版本号
 
-code.bdstatic.com/npm 百度仅同步热门包
+https://code.bdstatic.com/npm 百度仅同步热门包
 
 这些节点同步速度不同，但都需要准确的版本号
 
