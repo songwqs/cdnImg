@@ -61,8 +61,6 @@ https://jsdelivr.b-cdn.net （台湾 CDN）
 
 https://jsd.cdn.zzko.cn 国内 CDN
 
-https://cdn.jsdelivr.us Anycast
-
 国内 cdn npm 节点：
 
 https://npm.elemecdn.com 饿了么同步快，缺的多
