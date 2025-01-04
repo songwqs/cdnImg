@@ -101,7 +101,7 @@ https://code.bdstatic.com/npm 百度仅同步热门包
 
 √ https://docs.microsoft.com/en-us/aspnet/ajax/cdn 可用
 
-Github 加速站-Github 镜像
+Github 加速站-Github 镜像:
 
 https://gh.mzec.top/
 
