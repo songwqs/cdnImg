@@ -44,10 +44,7 @@ https://fastly.jsdelivr.net Fastly 节点可用性尚可
 
 https://originfastly.jsdelivr.net Fastly 节点可用性低
 
-https://test1.jsdelivr.net Cloudflare 节点可用性低
-
 https://cdn.jsdelivr.net 通用节点可用性低
-
 
 有第三方提供 jsdelivr 节点：
 
